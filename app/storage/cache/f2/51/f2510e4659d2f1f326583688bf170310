@@ -1,0 +1,25 @@
+9999999999s:790:"a:5:{s:5:"mtime";i:1402526316;s:7:"content";s:286:"title = "Blog Post"
+url = "/blog/post/:post_slug/"
+layout = "blog"
+
+[proBlogPost]
+post_id = ":post_slug"
+
+[proBlogCategories]
+categoryPage = "blog"
+
+[proBlogTags]
+TagPage = "blog"
+
+[proBlogArchive]
+
+
+[disqus]
+==
+
+        {% component 'proBlogPost' %}
+
+        {% component 'disqus' %} 
+";s:8:"settings";a:9:{s:5:"title";s:9:"Blog Post";s:3:"url";s:22:"/blog/post/:post_slug/";s:6:"layout";s:4:"blog";s:11:"proBlogPost";a:1:{s:7:"post_id";s:10:":post_slug";}s:17:"proBlogCategories";a:1:{s:12:"categoryPage";s:4:"blog";}s:11:"proBlogTags";a:1:{s:7:"TagPage";s:4:"blog";}s:14:"proBlogArchive";a:0:{}s:6:"disqus";a:0:{}s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:63:"{% component 'proBlogPost' %}
+
+        {% component 'disqus' %}";}";

@@ -1,0 +1,57 @@
+9999999999s:1609:"a:5:{s:5:"mtime";i:1402525560;s:7:"content";s:735:"description = "Default Layout"
+
+==
+
+{% partial 'header' %}
+
+    <header id="head" class="secondary"></header>
+
+    <!-- container -->
+    <div class="container">
+
+        <ol class="breadcrumb">
+            {% if this.page.title != 'Home' %}
+            <li><a href="/">Home</a></li>
+            <li class="active">{{this.page.title|capitalize}}</li>
+            {% endif %}
+        </ol>
+
+        <div class="row">
+            
+            <!-- Article main content -->
+            <article class="col-sm-12 maincontent">
+                {% page %}
+            </article>
+            <!-- /Article -->
+
+        </div>
+    </div>  <!-- /container -->
+    
+    <section class="container-full top-space"></section>
+{% partial 'footer' %}";s:8:"settings";a:2:{s:11:"description";s:14:"Default Layout";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:699:"{% partial 'header' %}
+
+    <header id="head" class="secondary"></header>
+
+    <!-- container -->
+    <div class="container">
+
+        <ol class="breadcrumb">
+            {% if this.page.title != 'Home' %}
+            <li><a href="/">Home</a></li>
+            <li class="active">{{this.page.title|capitalize}}</li>
+            {% endif %}
+        </ol>
+
+        <div class="row">
+            
+            <!-- Article main content -->
+            <article class="col-sm-12 maincontent">
+                {% page %}
+            </article>
+            <!-- /Article -->
+
+        </div>
+    </div>  <!-- /container -->
+    
+    <section class="container-full top-space"></section>
+{% partial 'footer' %}";}";

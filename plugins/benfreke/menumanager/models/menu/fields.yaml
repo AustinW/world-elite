@@ -1,0 +1,51 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Title
+    enabled:
+        label: Enable/disable this link
+        type: switch
+        default: 1
+    is_external:
+        label: Menu type
+        type: radio
+        options:
+            0: Internal
+            1: External
+        default: 0
+        cssClass: is_external-form-group
+    internal_url:
+        label: File to link To
+        type: dropdown
+        options: getUrlOptions
+        cssClass: internal_url-form-group
+    parameters:
+        label: Extra URL parameters (JSON) e.g if URL uses "/:slug"
+        commentAbove: "{ 'slug' : 'my-page-slug' }"
+        type: codeeditor
+        size: tiny
+    external_url:
+        label: Url
+        placeholder: Type external url
+        cssClass: external_url-form-group
+        comment: ex: http://example.com
+    url:
+        label: Url
+        cssClass: url-form-group
+    link_target:
+        label: Open link in
+        type: radio
+        options:
+            _self: In the same tab
+            _blank: In new tab            
+        default: _self
+    query_string:
+        label: Extra non-OctoberCMS query string parameters (will be appended to end of URL)
+        commentAbove: e.g "?param1=foo&param2=bar"
+        type: codeeditor
+        size: tiny
+    description:
+        label: Purpose/Description (optional)

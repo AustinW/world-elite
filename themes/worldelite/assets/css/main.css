@@ -1,0 +1,320 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: SPOT - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+ 
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+
+/* OVERALL ASPECT */
+
+body {
+    background-color: #fff;
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    
+    margin-top: 70px;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #2394ff;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.main-content {
+    margin-bottom:50px;
+}
+
+.navbar {
+    font-weight: 800;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-inverse {
+    background: #2d2d2d;
+    border-color: #2d2d2d;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+    background: #2394ff;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #999999;
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.navbar-inverse .navbar-brand i {
+    color: #ff7878;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/*TILT*/
+.tilt {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.tilt:hover {
+  -webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.th-border {
+    border:5px solid #fff;
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+    background: url(../images/header.jpg) repeat-x center top;
+    margin-top: -50px;
+    padding-top:0px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+    margin-top: 100px;
+    color: white;
+    font-size: 70px;
+    font-weight: 300;
+    letter-spacing: 3px;
+
+    text-shadow: 1px 1px 10px #000;
+}
+
+#headerwrap h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    text-shadow: 1px 1px 10px #000;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 200px;
+    height: 200px;
+}
+
+/* flip speed goes here */
+.flipper {
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.section {
+    padding:50px 0 50px 0;
+}
+
+.section-white {
+    background-color:#fff;
+}
+
+.section-grey {
+    background-color:#f5f7f9;
+    border-top: 1px solid #ecf0f2;
+    border-bottom: 1px solid #e9edf1;
+}
+
+.section-blue {
+    background: #3498db;
+    color: #fff;
+}
+
+.section-blue h4 {
+    color: #fff;
+}
+
+.section-black {
+    background: #2d2d2d;
+    color: #fff;
+}
+
+.section-footer {
+    padding-top: 30px;
+}
+
+.section-footer i {
+    color: #bdbdbd;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.section-footer i:hover {
+    color: #82c3ff;
+}
+
+.section .staff-th {
+    background-color: #fff;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    display:block;
+    background-position-y:25%;
+}
+
+.section .back .staff-th {
+    text-align:center;
+    padding-top:60px;
+}
+
+.section blockquote p {
+    font-size: 24px;
+    line-height:40px;
+}
+
+#upcoming-events, #announcements {
+    font-size:18px;
+}

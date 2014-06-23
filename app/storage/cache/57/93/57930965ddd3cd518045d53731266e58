@@ -1,0 +1,99 @@
+9999999999s:3045:"a:5:{s:5:"mtime";i:1402525506;s:7:"content";s:1452:"description = "Contact Layout"
+
+==
+
+{% partial 'header' %}
+
+    <header id="head" class="secondary"></header>
+
+    <!-- container -->
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            {% if this.page.title != 'Home' %}
+            <li class="active">{{this.page.title}}</li>
+            {% endif %}
+        </ol>
+
+        <div class="row">
+            <!-- Article main content -->
+            <article class="col-sm-9 maincontent">
+                {% page %}
+            </article>
+            <!-- /Article -->
+            
+            <!-- Sidebar -->
+            <aside class="col-sm-3 sidebar sidebar-right">
+
+                <div class="widget">
+                    <h4>Address</h4>
+                    <address>
+                        409 Claranna Ave, Dayton, OH 77030, USA
+                    </address>
+                    <h4>Phone:</h4>
+                    <address>
+                        (713) 791-1414
+                    </address>
+                </div>
+
+            </aside>
+            <!-- /Sidebar -->
+        </div>
+    </div>  <!-- /container -->
+
+    <section class="container-full top-space">
+        <div id="map"></div>
+    </section>
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=&amp;sensor=false&amp;extension=.js"></script> 
+    <script src="{{ 'assets/js/google-map.js'|theme }}"></script>
+
+{% partial 'footer' %}";s:8:"settings";a:2:{s:11:"description";s:14:"Contact Layout";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1416:"{% partial 'header' %}
+
+    <header id="head" class="secondary"></header>
+
+    <!-- container -->
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            {% if this.page.title != 'Home' %}
+            <li class="active">{{this.page.title}}</li>
+            {% endif %}
+        </ol>
+
+        <div class="row">
+            <!-- Article main content -->
+            <article class="col-sm-9 maincontent">
+                {% page %}
+            </article>
+            <!-- /Article -->
+            
+            <!-- Sidebar -->
+            <aside class="col-sm-3 sidebar sidebar-right">
+
+                <div class="widget">
+                    <h4>Address</h4>
+                    <address>
+                        409 Claranna Ave, Dayton, OH 77030, USA
+                    </address>
+                    <h4>Phone:</h4>
+                    <address>
+                        (713) 791-1414
+                    </address>
+                </div>
+
+            </aside>
+            <!-- /Sidebar -->
+        </div>
+    </div>  <!-- /container -->
+
+    <section class="container-full top-space">
+        <div id="map"></div>
+    </section>
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=&amp;sensor=false&amp;extension=.js"></script> 
+    <script src="{{ 'assets/js/google-map.js'|theme }}"></script>
+
+{% partial 'footer' %}";}";

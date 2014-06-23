@@ -1,0 +1,25 @@
+9999999999s:1025:"a:5:{s:5:"mtime";i:1402526324;s:7:"content";s:376:"title = "blog"
+url = "/blog/:filter?/:slug?/"
+layout = "blog"
+
+[proBlogList]
+postsPerPage = "10"
+filter_type = "none"
+pagination = "1"
+ignore_parent = "1"
+enable_rss = "1"
+rss_title = "testing RSS feed"
+rss_description = "here is more rss testing"
+
+[proBlogCategories]
+categoryPage = "blog"
+
+[proBlogTags]
+TagPage = "blog"
+
+[proBlogArchive]
+
+==
+
+{% component 'proBlogList' %}
+";s:8:"settings";a:8:{s:5:"title";s:4:"blog";s:3:"url";s:22:"/blog/:filter?/:slug?/";s:6:"layout";s:4:"blog";s:11:"proBlogList";a:7:{s:12:"postsPerPage";s:2:"10";s:11:"filter_type";s:4:"none";s:10:"pagination";s:1:"1";s:13:"ignore_parent";s:1:"1";s:10:"enable_rss";s:1:"1";s:9:"rss_title";s:16:"testing RSS feed";s:15:"rss_description";s:24:"here is more rss testing";}s:17:"proBlogCategories";a:1:{s:12:"categoryPage";s:4:"blog";}s:11:"proBlogTags";a:1:{s:7:"TagPage";s:4:"blog";}s:14:"proBlogArchive";a:0:{}s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:29:"{% component 'proBlogList' %}";}";
